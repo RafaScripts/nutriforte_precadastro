@@ -59,8 +59,8 @@ function App() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3BsYXRhZm9ybWEuYXBpYnJhc2lsLmNvbS5ici9hdXRoL2xvZ2luIiwiaWF0IjoxNjc2NDM0ODAzLCJleHAiOjE3MDc5NzA4MDMsIm5iZiI6MTY3NjQzNDgwMywianRpIjoiM0xGSkt3UVVrRkpVODBTdyIsInN1YiI6IjQ1MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IGTWpohJfJCr7j7T2x5kzdsFRuV-eTqCrw6dwZDxsko',
           'SecretKey': 'e3b0e4b8-7670-47b6-8543-47f869ccc90e',
-          'PublicToken': 'Gratis-LJZyLJzCGpLzGlZx253Z',
-          'DeviceToken': 'cc8ae6f5-bb1c-4a24-b10c-a5bcbd159961'
+          'PublicToken': '117c183e-fc58-4a08-b941-f7911e528f5d',
+          'DeviceToken': '7bac7404-7525-4d7e-9741-461024e2387f'
         }
       }).then((res) => {
         console.log(res.data)
