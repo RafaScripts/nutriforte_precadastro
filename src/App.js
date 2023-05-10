@@ -67,17 +67,17 @@ function App() {
         setTimeout(() => {
           window.location.href = 'https://bit.ly/distribuidoranutriforte';
         }, 1000)
-      }).catch((err) => {
+      }).catch(async (err) => {
         console.log(err)
-        setTimeout(async () => {
-          const menssage = "erro no pre-cadastro Nutriforte: \n" + err.toString();
-          await axios.post('https://ntfy.sh/feriados', menssage, {
-            headers: {
-              "Title": "Erro no pre-cadastro Nutriforte",
-              "Priority": "Urgent",
-              "tags": "warning",
-            }
-          });
+        const menssage = "erro no pre-cadastro Nutriforte: \n" + JSON.stringify(err);
+        await axios.post('https://ntfy.sh/feriados', menssage, {
+          headers: {
+            "Title": "Erro no pre-cadastro Nutriforte",
+            "Priority": "Urgent",
+            "tags": "warning",
+          }
+        });
+        setTimeout( () => {
           alert('Ocorreu um erro, tente novamente mais tarde...');
           window.location.reload();
         }, 1000);
